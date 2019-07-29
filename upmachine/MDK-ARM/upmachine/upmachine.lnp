@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"upmachine\startup_stm32f103xe.o"
+"upmachine\oled.o"
+"upmachine\main.o"
+"upmachine\gpio.o"
+"upmachine\usart.o"
+"upmachine\stm32f1xx_it.o"
+"upmachine\stm32f1xx_hal_msp.o"
+"upmachine\stm32f1xx_hal_gpio_ex.o"
+"upmachine\stm32f1xx_hal_tim.o"
+"upmachine\stm32f1xx_hal_tim_ex.o"
+"upmachine\stm32f1xx_hal_uart.o"
+"upmachine\stm32f1xx_hal.o"
+"upmachine\stm32f1xx_hal_rcc.o"
+"upmachine\stm32f1xx_hal_rcc_ex.o"
+"upmachine\stm32f1xx_hal_gpio.o"
+"upmachine\stm32f1xx_hal_dma.o"
+"upmachine\stm32f1xx_hal_cortex.o"
+"upmachine\stm32f1xx_hal_pwr.o"
+"upmachine\stm32f1xx_hal_flash.o"
+"upmachine\stm32f1xx_hal_flash_ex.o"
+"upmachine\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "upmachine\upmachine.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "upmachine.map" -o upmachine\upmachine.axf
